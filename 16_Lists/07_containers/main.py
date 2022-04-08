@@ -1,11 +1,10 @@
-list_box = [170, 168, 167, 160]
+
+list_box = [160,  160, 157]
+new = int(input('Введите вес '))
+
 position = 0
-for i in list_box:
-    new = int(input('Enter weight: '))
-    if new <= i:
-        position += 1
 
-list_box.insert(position, new)
+while position < len(list_box) and list_box[position] >= new:
+    position += 1
 
-print(list_box)
-
+print('Номер, куда встанет новый контейнер:', position + 1)
