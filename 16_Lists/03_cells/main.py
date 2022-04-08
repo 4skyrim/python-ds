@@ -5,7 +5,10 @@ for i in range(len(cells_list)):
     if  i > cells_list[i]:
         new_list.append(i)
 
-print(' Эффектиные клетки: ', i)
+if new_list == []:
+    new_list.append('отсутсвуют')
+
+print('Неподходящие значения: ', *new_list)
 
 
 
