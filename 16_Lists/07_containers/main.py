@@ -1,10 +1,11 @@
-number = int(input('Enter the number of boxes '))
-for _ in range(number):
-    ask = int(input('Enter the weight of the box '))
-    if ask > 200:
-        print('Error. Number cannot be greater than 200 and cannot be float. Try again. ')
-        ask = int(input('Enter the weight of the box '))
+list_box = [170, 168, 167, 160]
+position = 0
+for i in list_box:
+    new = int(input('Enter weight: '))
+    if new <= i:
+        position += 1
 
-new_box = int(input('enter weight '))
+list_box.insert(position, new)
 
+print(list_box)
 
