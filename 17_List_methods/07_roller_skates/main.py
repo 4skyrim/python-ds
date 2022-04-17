@@ -13,13 +13,14 @@ for i in range(people):
     foot.append(b)
 
 match = 0
-for shoes_ind in range(scates):
-    for foot_ind in range(people):
-        if size[shoes_ind] >= foot[foot_ind]:
+for foot_ind in range(people):
+    for shoes_ind in range(scates):
+        if foot[foot_ind] <= size[shoes_ind]:
             match += 1
 print('Наибольшее число людей с роликами: ', match)
 
-
+# for shoes_ind in range(scates):
+#     for foot_ind in range(people):
 
 
 
