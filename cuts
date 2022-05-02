@@ -1,0 +1,3 @@
+import math
+N = int(input('Введите кол-во кусков: '))
+print( 'число разрезов: ',  math.ceil(math.log2(N)))
